@@ -8,11 +8,11 @@ class Option { //название класов пишится с большой 
     this.fontSize = fontSize; //мы в каждый отдельный экземпляр будем вписывать свойства fontSize
     this.textAlign = textAlign; //мы в каждый отдельный экземпляр будем вписывать свойства textAlign
     let body = document.querySelectorAll('.body');// вызывем тело html через класс (body)
-    let div = document.createElement('div');//создаём div 
+    let div = document.createElement('div');//создаём div (метод)
     
      body[0].appendChild(div);
      div.style.cssText = [11] ;
-     div.textContent = 'Пятый пункт';//вписываю в div
+     div.textContent = 'lesson';//вписываю в div
      }
     calcArea() { //складывает общую площадь метод
      return this.height * this.width + this.textAlign + this.fontSize + this.bg;
